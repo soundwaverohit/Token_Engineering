@@ -1,0 +1,3 @@
+{"task_id":"T1","instruction":"Draft a labeling change memo for CardiCure reflecting a new 20 mg once-daily dose. Include one-sentence justification and cite relevant documents by doc_id.","target_drug":"CardiCure"}
+{"task_id":"T2","instruction":"Draft a safety label update for Neurozol including the 3% dizziness warning and the section 4.4 placement. Provide citations.","target_drug":"Neurozol"}
+{"task_id":"T3","instruction":"Draft a formulation and safety memo for HemaRelief referencing 10 mg/mL concentration and pediatric safety. Provide citations.","target_drug":"HemaRelief"}
