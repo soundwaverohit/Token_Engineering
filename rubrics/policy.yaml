@@ -1,0 +1,26 @@
+output_schema:
+  type: object
+  required: [drug, change, rationale, citations]
+  properties:
+    drug: {type: string}
+    change: {type: string}
+    rationale: {type: string}
+    citations:
+      type: array
+      items: {type: string, pattern: "^DOC-\\d+$"}
+style:
+  require_doc_ids_in_text: true
+  max_citations: 3
+critic:
+  weights:
+    logprob: 1.0
+    evidence: 1.2
+    schema_penalty: 1.0
+    cost: 0.05
+  thresholds:
+    accept_score: -2.0
+    entropy_gate: 1.5
+decode:
+  max_new_tokens: 160
+  top_k: 5
+  temperature: 0.7
